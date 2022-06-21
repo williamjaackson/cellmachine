@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cellmachine
+Version: 0.0.1
+Summary: A python library to help with cell machine development
+Author-email: kegnh <william@kegnh.com>
+Project-URL: Homepage, https://github.com/itskegnh/cellmachine
+Project-URL: Bug Tracker, https://github.com/itskegnh/cellmachine/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# cellmachine
+A python library to help with cell machine development.

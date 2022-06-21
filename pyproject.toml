@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cellmachine"
+version = "0.0.1"
+authors = [
+  { name="kegnh", email="william@kegnh.com" },
+]
+description = "A python library to help with cell machine development"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/itskegnh/cellmachine"
+"Bug Tracker" = "https://github.com/itskegnh/cellmachine/issues"
