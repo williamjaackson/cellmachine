@@ -28,7 +28,7 @@ print(level.name) # display the level's name attribute.
 
 ---
 ## BorderType
-<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/master/src/cellmachine/__init__.py#L10-L28">source</a></sup>
+<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/main/src/cellmachine/__init__.py#L10-L28">source</a></sup>
 
 > A class that represents a border type.
 
@@ -41,7 +41,7 @@ print(level.name) # display the level's name attribute.
 
 ---
 ### `BorderType` Stop
-<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/master/src/cellmachine/__init__.py#L25">source</a></sup>
+<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/main/src/cellmachine/__init__.py#L25">source</a></sup>
 
 > Represents the 'Stop' border type. The border acts like a wall, Immovable.
 
@@ -49,7 +49,7 @@ print(level.name) # display the level's name attribute.
  - [int](https://docs.python.org/3/library/functions.html#int)
 
 ### `BorderType` Wrap
-<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/master/src/cellmachine/__init__.py#L26">source</a></sup>
+<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/main/src/cellmachine/__init__.py#L26">source</a></sup>
 
 > Represents the 'Wrap' border type. The border acts like the corresponding cell on the other side of the level.
 
@@ -57,7 +57,7 @@ print(level.name) # display the level's name attribute.
  - [int](https://docs.python.org/3/library/functions.html#int)
 
 ### `BorderType` Delete
-<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/master/src/cellmachine/__init__.py#L27">source</a></sup>
+<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/main/src/cellmachine/__init__.py#L27">source</a></sup>
 
 > Represents the 'Delete' border type. The border acts like a trash cell, any cells pushed into it are destroyed.
 
@@ -65,7 +65,7 @@ print(level.name) # display the level's name attribute.
  - [int](https://docs.python.org/3/library/functions.html#int)
 
 ### `BorderType` Flip
-<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/master/src/cellmachine/__init__.py#L28">source</a></sup>
+<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/main/src/cellmachine/__init__.py#L28">source</a></sup>
 
 > Represents the 'Flip' border type. The border acts like a mirror, any cells pushed into it are flipped.
 
@@ -73,7 +73,7 @@ print(level.name) # display the level's name attribute.
  - [int](https://docs.python.org/3/library/functions.html#int)
 ---
 ## Level
-<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/master/src/cellmachine/__init__.py#L30-135">source</a></sup>
+<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/main/src/cellmachine/__init__.py#L30-135">source</a></sup>
 
 | Attributes | Methods | Subclasses |
 | ---------- | ------- | - |
@@ -85,7 +85,7 @@ print(level.name) # display the level's name attribute.
 ---
 
 ### `Level` border
-<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/master/src/cellmachine/__init__.py#L10-L28">source</a></sup>
+<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/main/src/cellmachine/__init__.py#L10-L28">source</a></sup>
 
 > The border type of the level.
 
@@ -109,7 +109,7 @@ print(level.name) # display the level's name attribute.
  - [str](https://docs.python.org/3/library/functions.html#func-str)
 
 ### `Level` size
-<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/master/src/cellmachine/__init__.py#L49-L108">source</a></sup>
+<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/main/src/cellmachine/__init__.py#L49-L108">source</a></sup>
 
 > The size of the level.
 
@@ -119,7 +119,7 @@ print(level.name) # display the level's name attribute.
 ---
 
 ### `Level` from_code 
-<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/master/src/cellmachine/__init__.py#L110-135">source</a></sup>
+<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/main/src/cellmachine/__init__.py#L110-135">source</a></sup>
 
 **Parameters:**
  - `code` (*[str](https://docs.python.org/3/library/functions.html#func-str)*) - The level code string. [Supported Formats](#supported-code-formats)
@@ -130,7 +130,7 @@ print(level.name) # display the level's name attribute.
 ---
 
 ### `Level` LevelSize 
-<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/master/src/cellmachine/__init__.py#L49-108">source</a></sup>
+<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/main/src/cellmachine/__init__.py#L49-108">source</a></sup>
 
 > A class to represent a level's size.
 
@@ -162,7 +162,7 @@ print(level.name) # display the level's name attribute.
  - [int](https://docs.python.org/3/library/functions.html#int)
 
 ### `Level.LevelSize` size 
-<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/master/src/cellmachine/__init__.py#L82-L88">source</a></sup>
+<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/main/src/cellmachine/__init__.py#L82-L88">source</a></sup>
 
 > The size of the level.
 
@@ -170,17 +170,17 @@ print(level.name) # display the level's name attribute.
  - [tuple](https://docs.python.org/3/library/functions.html#func-tuple)
 
 ### `Level.LevelSize` x 
-<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/master/src/cellmachine/__init__.py#L90-L96">source</a></sup>
+<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/main/src/cellmachine/__init__.py#L90-L96">source</a></sup>
 
 > Alias for [width](#levellevelsize-width).
 
 ### `Level.LevelSize` y 
-<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/master/src/cellmachine/__init__.py#L98-L104">source</a></sup>
+<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/main/src/cellmachine/__init__.py#L98-L104">source</a></sup>
 
 > Alias for [height](#levellevelsize-height).
 
 ### `Level.LevelSize` area 
-<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/master/src/cellmachine/__init__.py#L106-L108">source</a></sup>
+<sup style="display: grid"><a href="https://github.com/itskegnh/cellmachine/blob/main/src/cellmachine/__init__.py#L106-L108">source</a></sup>
 
 > The area of the level. (width * height)
 
