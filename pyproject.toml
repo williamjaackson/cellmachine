@@ -3,12 +3,13 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cellmachine"
-version = "0.0-beta.1"
+name = "searchor"
+version = "2.0.0"
 authors = [
-  { name="William Jackson", email="william@kegnh.com" },
+    { name="Arjun Sharda", email="sharda.aj17@gmail.com" },
+    { name="William Jackson", email="william@kegnh.com" },
 ]
-description = "For all things cell machine."
+description = "⚡️ Quick and easy search engine queries."
 readme = "README.md"
 license = { file="LICENSE" }
 requires-python = ">=3.7"
@@ -19,5 +20,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/itskegnh/cellmachine"
-"Bug Tracker" = "https://github.com/itskegnh/cellmachine/issues"
+"Homepage" = "https://github.com/ArjunSharda/Searchor"
+"Bug Tracker" = "https://github.com/ArjunSharda/Searchor/issues"
