@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cellmachine"
-version = "0.0.1"
+version = "0.0-beta.1"
 authors = [
   { name="William Jackson", email="william@kegnh.com" },
 ]
