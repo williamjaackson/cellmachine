@@ -26,7 +26,7 @@ jobs:
     - name: Version bump
       run: |
         semantic-release version
-        git push <repository_url> HEAD:<branch_name> --tags
+        git push https://github.com/itskegnh/cellmachine HEAD:main --tags
     - name: Build package
       run: python -m build
     - name: Publish package
