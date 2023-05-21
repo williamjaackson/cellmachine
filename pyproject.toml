@@ -1,0 +1,20 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "cellmachine"
+version = "0.0.4"
+description = "All things Cell Machine."
+authors = ["kegnh <itskegnh@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:version"
+version_source = "commit"
+branch = "main"
