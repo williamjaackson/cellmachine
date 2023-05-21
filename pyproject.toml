@@ -7,6 +7,8 @@ name = "cellmachine"
 version = "0.0.0"
 description = "All things Cell Machine."
 authors = ["kegnh <itskegnh@gmail.com>"]
+readme = "README.md"
+
 
 [tool.poetry.dependencies]
 python = "^3.9"
