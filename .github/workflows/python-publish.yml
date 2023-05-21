@@ -5,9 +5,6 @@ on:
     branches:
       - main
 
-permissions:
-  contents: read
-
 jobs:
   deploy:
 
@@ -16,24 +13,29 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
         fetch-depth: 0
+        persist-credentials: false
+
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
         python-version: '3.x'
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install build python-semantic-release
+
     - name: Version bump
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         semantic-release version
         git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main --tags
+
     - name: Build package
       run: python -m build
+
     - name: Publish package
       uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
       with:
