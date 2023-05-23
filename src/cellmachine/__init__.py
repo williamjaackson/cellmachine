@@ -1,1 +1,2 @@
-print('cellmachine.pyy - https://github.com/itskegnh/cellmachine/')
+from . import levelstring, cells
+from .level import Level
