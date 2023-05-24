@@ -29,7 +29,11 @@ def format_cells(cells, placeables, width, height):
         for cell in cells.split(","):
             _type, _rotation, x, y = cell.split(".")
             y = height - int(y) - 1
-            _cell = celltype[int(_type)](None, (int(x), int(y)), int(_rotation))
+            _cell = celltype[int(_type)](
+                level=None,
+                position=(int(x), int(y)),
+                rotation=int(_rotation),
+            )
             _cells.append(_cell)
     
     return _placeables, _cells
@@ -59,7 +63,7 @@ def import_level(level_string):
 
     lvl = Level(
         size=level_data['size'],
-        cells=level_data['cells'],
+        cells=cells,
         placeables=level_data['placeables'],
         name=level_data['name'],
         tutorial_text=level_data['tutorial_text'],

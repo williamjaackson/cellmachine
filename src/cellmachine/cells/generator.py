@@ -36,4 +36,4 @@ class Generator(Cell):
             if push_result[0] == False or push_result[1] == True:
                 return
         
-        reference_cell.__class__(self.level, reference_cell.rotation, newcell_pos)
+        reference_cell.__class__(self.level, newcell_pos, reference_cell.rotation)

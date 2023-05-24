@@ -3,7 +3,7 @@ class Cell:
         self.level    = level
         self.celltype = celltype
         self._rotation = rotation
-        
+
         self._position = position
         if level is not None:
             self.position = position

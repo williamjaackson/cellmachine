@@ -62,10 +62,14 @@ class Level:
             if cell.celltype == celltype and (rotation == -1 or cell.rotation == rotation):
                 update_queue.append(cell)
 
+        for cell in update_queue:
+            print(cell.celltype, cell.position, cell.rotation)
+
         if rotation != -1:
             update_queue.sort(key=lambda cell: cell.position[rotation % 2], reverse=rotation <= 2)
         
         for cell in update_queue:
+            print(cell.celltype, cell.position, cell.rotation)
             cell.step()
     
     def tick(self, count=1):
@@ -112,8 +116,8 @@ class Level:
         
         if image_size is not None:
             if image_width > image_height:
-                image = image.resize((image_size, int(image_size * image_height / image_width)))
+                image = image.resize((image_size, int(image_size * image_height / image_width)), resample=Image.NEAREST)
             else:
-                image = image.resize((int(image_size * image_width / image_height), image_size))
+                image = image.resize((int(image_size * image_width / image_height), image_size), resample=Image.NEAREST)
         
         return image
