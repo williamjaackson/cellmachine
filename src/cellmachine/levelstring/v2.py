@@ -134,7 +134,7 @@ def export_level(level):
         "0": 10,
     }
 
-    cell_data = [[72] * (level.size[0] * level.size[1])][0]
+    cell_data = [72] * (level.size[0] * level.size[1])
     
     for placeable in level.placeables:
         cell_data[placeable[0] + ((level.size[1] - placeable[1] - 1) * level.size[0])] = 73
