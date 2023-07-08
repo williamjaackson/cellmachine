@@ -22,7 +22,8 @@ class Cell:
     @position.setter
     def position(self, value: tuple):
         if self.level is not None:
-            del self.level.cells[self._position]
+            if self._position in self.level.cells:
+                del self.level.cells[self._position]
         self._position = value
         if self.level is not None:
             self.level.cells[self._position] = self
