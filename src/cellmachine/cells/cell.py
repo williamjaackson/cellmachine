@@ -4,9 +4,8 @@ class Cell:
         self.celltype = celltype
         self._rotation = rotation
 
-        self._position = position
-        if level is not None:
-            self.position = position
+        self._position = None
+        self.position = position
     
     @property
     def rotation(self):
@@ -22,7 +21,8 @@ class Cell:
     
     @position.setter
     def position(self, value: tuple):
-        del self.level.cells[self._position]
+        if self._position:
+            del self.level.cells[self._position]
         self._position = value
         self.level.cells[self._position] = self
 
