@@ -21,10 +21,10 @@ class Cell:
     
     @position.setter
     def position(self, value: tuple):
-        if self.level:
+        if self.level is not None:
             del self.level.cells[self._position]
         self._position = value
-        if self.level:
+        if self.level is not None:
             self.level.cells[self._position] = self
 
     def push(self, direction, bias):
