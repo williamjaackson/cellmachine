@@ -54,6 +54,9 @@ class Cell:
             return False, False
         
         future_cell = self.level.cells.get(target)
+        if future_cell == self:
+            print('\033[91m[!] \033[0mPushing self!')
+            return False, False
     
         if future_cell is None:
             self.position = target
