@@ -4,7 +4,7 @@ class Cell:
         self.celltype = celltype
         self._rotation = rotation
 
-        self._position = None
+
         self.position = position
     
     @property
@@ -21,10 +21,11 @@ class Cell:
     
     @position.setter
     def position(self, value: tuple):
-        if self._position:
+        if self.level:
             del self.level.cells[self._position]
         self._position = value
-        self.level.cells[self._position] = self
+        if self.level:
+            self.level.cells[self._position] = self
 
     def push(self, direction, bias):
         """
