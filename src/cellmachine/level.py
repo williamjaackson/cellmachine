@@ -1,5 +1,6 @@
 from PIL import Image
 from pathlib import Path
+from .levelstring import *
 
 texturepack = {}
 filenames = [
@@ -54,6 +55,9 @@ class Level:
         if position[1] < 0 or position[1] >= self.size[1]:
             return True
         return False
+
+    def export_level(self):
+        return v3.export_level(level)
 
     def subtick(self, celltype, rotation=-1):
         update_queue = []
