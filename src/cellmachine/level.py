@@ -74,10 +74,9 @@ class Level:
         for cell in sorted(list(self.cells.values()), key=lambda c: (c.position[0], c.position[1])):
             cell.position = (cell.position[0] - min_x, cell.position[1] - min_y)
         
-        self.placeables = [(x + x_offset, y + y_offset) for x, y in self.placeables]
+        self.placeables = [(x - min_x, y - min_y) for x, y in self.placeables)]
 
         return self
-
 
     def subtick(self, celltype, rotation=-1):
         update_queue = []
