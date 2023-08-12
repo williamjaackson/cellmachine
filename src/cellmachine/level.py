@@ -59,6 +59,32 @@ class Level:
     def export_level(self):
         return v3.export_level(level)
 
+    def zoom(self, offset):
+        # Get all x and y coordinates
+        x_coords = [cell.position[0] for cell in self.cells.values()]
+        y_coords = [cell.position[1] for cell in self.cells.values()]
+
+        # Find the min and max coordinates
+        min_x, max_x = min(x_coords), max(x_coords)
+        min_y, max_y = min(y_coords), max(y_coords)
+
+        # Calculate the offsets
+        x_offset = -min_x + offset
+        y_offset = -min_y + offset
+
+        # Adjust the positions of all cells
+        for cell in list(self.cells.values()):
+            new_position = (cell.position[0] + x_offset, cell.position[1] + y_offset)
+            cell.position = new_position
+
+        # Also adjust the placeables
+        self.placeables = [(x + x_offset, y + y_offset) for x, y in self.placeables]
+
+        # Update the level size (with the possibility of leaving 1 background tile's width around the level)
+        self.size = (max_x - min_x + 1 + 2 * offset, max_y - min_y + 1 + 2 * offset)
+
+        return self
+
     def subtick(self, celltype, rotation=-1):
         update_queue = []
 
