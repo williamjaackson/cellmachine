@@ -89,7 +89,7 @@ class Level:
             #print(cell.celltype, cell.position, cell.rotation)
 
         if rotation != -1:
-            update_queue.sort(key=lambda cell: cell.position[rotation % 2], reverse=rotation <= 2)
+            update_queue.sort(key=lambda cell: cell.position[rotation % 2], reverse=rotation <= 1)
         
         for cell in update_queue:
             #print(cell.celltype, cell.position, cell.rotation)
